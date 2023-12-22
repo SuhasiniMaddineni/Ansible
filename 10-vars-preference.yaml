@@ -2,9 +2,9 @@
   hosts: localhost
   # vars_files:
   # - variables.yaml 
-  vars: 
-    PERSON: "SUHASINIfromplay"
-    WISHES: "MORNINGfromplay"
+  # vars: 
+  #   PERSON: "SUHASINIfromplay"
+  #   WISHES: "MORNINGfromplay"
   vars_prompt:
   - name: PERSON 
     prompt: please enter your name
