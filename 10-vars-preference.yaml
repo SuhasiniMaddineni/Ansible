@@ -6,10 +6,10 @@
   vars_prompt:
   - name: PERSON
     prompt: please enter your name
-    private: true #user can see what they are entering
+    private: false #user can see what they are entering
   - name: WISHES
     prompt: please enter wishes
-    private: true #user can't see what they are entering  
+    private: false #user can't see what they are entering  
   tasks:
   - name: check variables 
     vars: 
@@ -18,3 +18,4 @@
     ansible.builtin.debug:
        msg: "Hello {{PERSON}}, GOOD {{WISHES}}"
 
+#CMD
