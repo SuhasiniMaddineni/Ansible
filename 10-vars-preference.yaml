@@ -1,7 +1,7 @@
 - name: variables from play level
   hosts: localhost
-  vars_files:
-  - variables.yaml 
+  # vars_files:
+  # - variables.yaml 
   vars: 
     PERSON: "SUHASINI from play"
     WISHES: "MORNING from play"
@@ -22,3 +22,4 @@
 
 #CMD
 #task
+#file
