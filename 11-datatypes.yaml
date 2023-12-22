@@ -1,8 +1,8 @@
 - name: print datatypes
   hosts: localhost
   vars:
-    name: "Suhasini" #Key value
-    skills: #Skill is List type
+    Name: "Suhasini" #Key value
+    Skills: #Skill is List type
     - DevOps
     - AWS
     - Shell
@@ -16,10 +16,10 @@
   tasks:
   - name: print key value
     ansible.builtin.debug:
-      msg: "the name is:{{name}}"
+      msg: "the name is:{{Name}}"
   - name: print list values
     ansible.builtin.debug:
-      msg: "the list of values are: {{skills}}"
+      msg: "the list of values are: {{Skills}}"
   - name: print map values
     ansible.builtin.debug:
       msg: "the map values are: {{Experience}}"
