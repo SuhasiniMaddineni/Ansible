@@ -1,10 +1,10 @@
 - name: variables from play level
   hosts: localhost
   vars: 
-    PERSON: "SUHASINI"
-    WISHES: "MORNING"
+    PERSON: "SUHASINI from play"
+    WISHES: "MORNING from play"
   vars_prompt:
-  - name: PERSON
+  - name: PERSON 
     prompt: please enter your name
     private: false #user can see what they are entering
   - name: WISHES
@@ -13,8 +13,8 @@
   tasks:
   - name: check variables 
     vars: 
-      PERSON: "SUHASINI"
-      WISHES: "MORNING"
+      PERSON: "SUHASINI from task"
+      WISHES: "MORNING from task"
     ansible.builtin.debug:
        msg: "Hello {{PERSON}}, GOOD {{WISHES}}"
 
