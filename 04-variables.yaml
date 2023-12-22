@@ -1,6 +1,6 @@
 - name: declare variables
   hosts: localhost
-  tasks: 
+  vars: 
     course: "DevOps"
     trainer: "Shivakumar"
     duration: "110hrs"
