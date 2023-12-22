@@ -1,5 +1,5 @@
 - name: print datatypes
-  host: localhost
+  hosts: localhost
   vars:
     name: "Suhasini" #Key value
     skills: #Skill is List type
