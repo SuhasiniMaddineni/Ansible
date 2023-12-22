@@ -2,16 +2,16 @@
   hosts: localhost
   # vars_files:
   # - variables.yaml 
-  # vars: 
-  #   PERSON: "SUHASINIfromplay"
-  #   WISHES: "MORNINGfromplay"
   vars_prompt:
   - name: PERSON 
     prompt: please enter your name
     private: false #user can see what they are entering
   - name: WISHES
     prompt: please enter wishes
-    private: false #user can't see what they are entering  
+    private: false #user can't see what they are entering 
+  vars: 
+    PERSON: "SUHASINIfromplay"
+     WISHES: "MORNINGfromplay"   
   tasks:
   - name: check variables 
     # vars: 
