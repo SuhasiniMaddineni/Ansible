@@ -12,10 +12,11 @@
     private: false #user can't see what they are entering  
   tasks:
   - name: check variables 
-    vars: 
-      PERSON: "SUHASINI from task"
-      WISHES: "MORNING from task"
+    # vars: 
+    #   PERSON: "SUHASINI from task"
+    #   WISHES: "MORNING from task"
     ansible.builtin.debug:
        msg: "Hello {{PERSON}}, GOOD {{WISHES}}"
 
 #CMD
+#task
