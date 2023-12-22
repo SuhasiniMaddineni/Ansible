@@ -10,8 +10,8 @@
     prompt: please enter wishes
     private: false #user can't see what they are entering 
   vars: 
-    PERSON: "SUHASINI from play"
-    WISHES: "MORNING from play"   
+    PERSON: "suhasini from play"
+    WISHES: "morning from play"   
   tasks:
   - name: check variables 
     # vars: 
