@@ -2,18 +2,18 @@
   hosts: localhost
   become: yes
   tasks: 
-  - name: check user exits or not
-    ansible.builtin.command: id roboshop
-    register: user  #user is a variable name
-    ignore_errors: true  #ansible will not exit if got error
+  # - name: check user exits or not
+  #   ansible.builtin.command: id roboshop
+  #   register: user  #user is a variable name
+  #   ignore_errors: true  #ansible will not exit if got error
 
-  - name: print variable value
-    ansible.builtin.debug:
-      msg: "user output is: {{user}}"
+  # - name: print variable value
+  #   ansible.builtin.debug:
+  #     msg: "user output is: {{user}}"
 
-  - name: print exit status or return code 
-    ansible.builtin.debug:
-      msg: "status is: {{user.rc}}"
+  # - name: print exit status or return code 
+  #   ansible.builtin.debug:
+  #     msg: "status is: {{user.rc}}"
         
   - name: print user
     ansible.builtin.user:
