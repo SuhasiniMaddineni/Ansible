@@ -1,12 +1,12 @@
 - name: conditionals
   hosts: localhost
-  become: yes
+  #become: yes
   tasks: 
   - name: check user exits or not
     ansible.builtin.command: id roboshp
-    register: user #user is a variable name
-    ignore_errors: true #ansible will not exit if got error
+    register: user  #user is a variable name
+    ignore_errors: true  #ansible will not exit if got error
 
   - name: print variable value
     ansible.builtin.debug:
-      msg:"user name is {user}}"
+      msg:"user output is {user}}"
