@@ -15,3 +15,7 @@
     ansible.builtin.debug:
       msg: "status:{{user.rc}}"
         
+  - name: print user
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0  #condition    
