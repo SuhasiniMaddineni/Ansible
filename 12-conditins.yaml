@@ -1,6 +1,6 @@
 - name: conditionals
   hosts: localhost
-  #become: yes
+  become: yes
   tasks: 
   - name: check user exits or not
     ansible.builtin.command: id roboshp
