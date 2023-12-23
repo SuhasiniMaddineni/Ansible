@@ -5,10 +5,10 @@
     ansible.builtin.debug:
       msg: "Hello {{item}}" #item is a default keyword
     loop:
-      - Devops
-      - AWS
-      - shell
-      - linux
+    - Devops
+    - AWS
+    - shell
+    - linux
 
 # to use this loops to install multiple packages
 
