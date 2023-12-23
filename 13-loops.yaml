@@ -4,9 +4,8 @@
   - name: looping
     ansible.builtin.debug:
       msg: "Hello {{item}}"
-    - loops:
+    - loop:
       - Devops
       - AWS
       - shell
       - linux
-         
